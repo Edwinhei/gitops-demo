@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: nginx:1.25.3
+          image: nginx:nonexistent-tag      # ← 故意写个不存在的 tag
           ports: [{ containerPort: 80 }]
 ---
 apiVersion: v1
